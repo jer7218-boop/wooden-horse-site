@@ -47,12 +47,8 @@
   }
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
   .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.02em}
-  .logo{
-    width:40px;height:40px;border-radius:10px;
-    display:grid;place-items:center;font-weight:800;font-size:15px;
-    color:#04110e;background:linear-gradient(135deg,var(--accent),var(--accent-2));
-    box-shadow:0 0 24px var(--accent-glow);
-  }
+  .logo{height:44px;width:auto;display:grid;place-items:center}
+  .logo img{height:44px;width:auto;display:block;filter:drop-shadow(0 0 14px var(--accent-glow))}
   .brand small{display:block;font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
   nav.links{display:flex;gap:28px;font-size:14px;color:var(--muted)}
   nav.links a:hover{color:var(--text)}
@@ -220,7 +216,7 @@
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="#top">
-      <span class="logo">WH</span>
+      <span class="logo"><img src="wh-logo.png" alt="Wooden Horse Capital logo" /></span>
       <span>Wooden Horse<small>Capital + Development</small></span>
     </a>
     <nav class="links">
@@ -359,7 +355,7 @@
 
 <footer>
   <div class="wrap foot-inner">
-    <div class="brand"><span class="logo">WH</span> Wooden Horse Capital + Development, LLC</div>
+    <div class="brand"><span class="logo"><img src="wh-logo.png" alt="Wooden Horse Capital logo" /></span> Wooden Horse Capital + Development, LLC</div>
     <div>© <span id="yr"></span> Wooden Horse Capital, LLC · info@woodenhorsecapital.com</div>
   </div>
 </footer>
